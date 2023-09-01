@@ -4,10 +4,15 @@ using UnityEngine;
 using System.IO;
 using System;
 using System.Net.Mime;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TextFileReader : MonoBehaviour
 {
     [SerializeField] private TextAsset dialogueText;
+    [SerializeField] private Button nextButton;
+    [SerializeField] private Text dialogueTextBox;
+    private Queue<string> dialogueQueue; 
 
     void Start()
     {
@@ -22,24 +27,27 @@ public class TextFileReader : MonoBehaviour
         
         string[] lines = content.Split(new [] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); //change
         
-        Queue<string> dialogueQueue = new Queue<string>();
+        dialogueQueue = new Queue<string>();
         
         foreach (string line in lines)
         {
             dialogueQueue.Enqueue(line);
         }
         
-        while (dialogueQueue.Count > 0)
+        nextButton.onClick.AddListener(NextButtonPress);
+
+    }
+
+    public void NextButtonPress()
+    {
+        string line = dialogueQueue.Dequeue();
+
+        dialogueTextBox.text = line;
+        
+        Debug.Log(line);
+        if (dialogueQueue.Count <= 0)
         {
-            string line = dialogueQueue.Dequeue();
-
-
-            Debug.Log(line);
-        }
-
-        void update()
-        {
-
+            SceneManager.LoadScene();
         }
     }
 }
