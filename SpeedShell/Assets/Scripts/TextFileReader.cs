@@ -6,12 +6,13 @@ using System;
 using System.Net.Mime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class TextFileReader : MonoBehaviour
 {
     [SerializeField] private TextAsset dialogueText;
     [SerializeField] private Button nextButton;
-    [SerializeField] private Text dialogueTextBox;
+    [SerializeField] private MediaTypeNames.Text dialogueTextBox;
     private Queue<string> dialogueQueue; 
 
     void Start()
