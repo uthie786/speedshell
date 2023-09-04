@@ -7,12 +7,13 @@ using System.Net.Mime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
 
 public class TextFileReader : MonoBehaviour
 {
     [SerializeField] private TextAsset dialogueText;
     [SerializeField] private Button nextButton;
-    [SerializeField] private MediaTypeNames.Text dialogueTextBox;
+    [SerializeField] private Text dialogueTextBox;
     private Queue<string> dialogueQueue; 
 
     void Start()
@@ -48,7 +49,7 @@ public class TextFileReader : MonoBehaviour
         Debug.Log(line);
         if (dialogueQueue.Count <= 0)
         {
-            SceneManager.LoadScene();
+           // SceneManager.LoadScene();
         }
     }
 }
