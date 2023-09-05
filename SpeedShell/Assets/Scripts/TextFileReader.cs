@@ -4,22 +4,30 @@ using UnityEngine;
 using System.IO;
 using System;
 using System.Net.Mime;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UIElements.Image;
 
 public class TextFileReader : MonoBehaviour
 {
     [SerializeField] private TextAsset dialogueText;
     [SerializeField] private Button nextButton;
     [SerializeField] private Text dialogueTextBox;
+    [SerializeField] private GameObject snailImage;
+    private int count = 0;
     private Queue<string> dialogueQueue; 
 
     void Start()
     {
+        
         string text = "";
         TextReader();
+        NextButtonPress();
+        
     }
 
     public void TextReader()
@@ -35,6 +43,7 @@ public class TextFileReader : MonoBehaviour
         {
             dialogueQueue.Enqueue(line);
         }
+
         
         nextButton.onClick.AddListener(NextButtonPress);
 
@@ -42,16 +51,31 @@ public class TextFileReader : MonoBehaviour
 
     public void NextButtonPress()
     {
+        count++;
         string line = dialogueQueue.Dequeue();
-
         dialogueTextBox.text = line;
+        Debug.Log(count);
+
+        if (count % 2 == 0)
+        {
+            snailImage.GetComponent<Animator>().Play("InactiveDialogue");
+        }
+        else
+        {
+            snailImage.GetComponent<Animator>().Play("ActiveDialogue");
+        }
         
-        Debug.Log(line);
+        
         if (dialogueQueue.Count <= 0)
         {
-           // SceneManager.LoadScene();
+           SceneManager.LoadScene("Checkpoint Race");
+           
         }
     }
+
+    
+
+    
 }
 
 
