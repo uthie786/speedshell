@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(0f, 0.0f, verticalInput * -1);
-        Vector3 rotation = new Vector3(0f, horizontalInput, 0f);
+        Vector3 movement = new Vector3(0f, verticalInput, 0f) ;
+        Vector3 rotation = new Vector3(0f, 0f, horizontalInput);
 
         transform.Translate(movement * speed * Time.deltaTime);
         if (verticalInput != 0)

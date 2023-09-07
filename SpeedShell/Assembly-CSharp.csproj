@@ -75,10 +75,12 @@
      <Folder Include="Assets\TutorialInfo\Scripts" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <Folder Include="Assets\TutorialInfo\Icons" />
+     <Folder Include="Assets\Animations" />
      <Folder Include="Assets\TutorialInfo" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <Folder Include="Assets\Fonts" />
      <None Include="Assets\TextFiles\Advanced.txt" />
      <Folder Include="Assets\TextFiles" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
