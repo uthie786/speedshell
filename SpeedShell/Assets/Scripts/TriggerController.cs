@@ -2,35 +2,33 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
+using Unity.Burst.Intrinsics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TriggerController : MonoBehaviour
 {
-
-    private float timer = 0f;
-    [SerializeField] private float timerDuration = 15f;
-
-    //[SerializeField] private GameObject[] triggerArray;
-    
-    [SerializeField] private Text timerText;
-    //private string timerTextString = "";
-    
-    private Queue<Transform> checkpointQueue;
-
-    [SerializeField] private Transform[] emptyArray;
-
     private int count = 0;
+    private float timer = 0f;
+    private StackController<GameObject> checkpointList;
+    
+    [SerializeField] private float timerDuration = 15f;
+    [SerializeField] private Text timerText;
+    [SerializeField] private GameObject[] emptyArray;
+    [SerializeField] private GameObject uiDefeatScreen;
+    [SerializeField] private GameObject trigger;
 
     void Start()
     {
-        count = 1;
         timer = timerDuration;
         
-        foreach (Transform empty in emptyArray)
+        for (int i = emptyArray.Length - 1; i >= 0; i--)
         {
-            checkpointQueue.Enqueue(empty);
-        }
+            checkpointList.Push(emptyArray[i]);
+            Debug.Log(checkpointList.Peek());
+        } 
+
     }
     void FixedUpdate()
     {
@@ -43,14 +41,30 @@ public class TriggerController : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        trigger.transform.position = emptyArray[0].transform.position;
+        checkpointList = new StackController<GameObject>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (count <= 4)
+        if (other.CompareTag("Player"))
         {
-            gameObject.transform.position = emptyArray[count].position;
-            gameObject.transform.rotation = emptyArray[count].rotation;
-            count++;
-        }
+            GameObject attachedEmpty = trigger.transform.parent.gameObject;
+            if(checkpointList.Peek() == attachedEmpty)
+            {
+                count++;
+                Debug.Log(count);
+                checkpointList.Pop();
+                trigger.transform.SetParent(emptyArray[count].transform);
+                trigger.transform.position = emptyArray[count].transform.position;
+            } 
+
+        } 
+
+
+
         if(count >= 4)
         {
             count = 0;
@@ -60,8 +74,6 @@ public class TriggerController : MonoBehaviour
         Debug.Log("+5s");
         Debug.Log(timer);
         
-        checkpointQueue.Dequeue();
-        checkpointQueue.Enqueue(emptyArray[count]);
     }
 
     private void DisplayTimer()
@@ -71,7 +83,10 @@ public class TriggerController : MonoBehaviour
 
     public void Defeat()
     {
-        
+        //if (timer == 0)
+        //{
+          // uiDefeatScreen.
+       // }
     }
 
 

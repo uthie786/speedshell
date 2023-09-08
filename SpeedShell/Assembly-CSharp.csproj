@@ -45,6 +45,8 @@
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\TextFileReader.cs" />
      <Compile Include="Assets\Scripts\TriggerController.cs" />
+     <Compile Include="Assets\Scripts\StackController.cs" />
+     <Compile Include="Assets\Scripts\QueueController.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -59,6 +61,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
      <None Include="Assets\TextFiles\Checkpoint.txt" />
+     <Folder Include="Assets\Materials" />
      <Folder Include="Assets\2D Assets" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\TextMesh Pro" />

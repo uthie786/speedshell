@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using System;
 using System.Net.Mime;
+using StacksAndQueues;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
@@ -18,13 +19,11 @@ public class TextFileReader : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Text dialogueTextBox;
     [SerializeField] private GameObject snailImage;
-    private int count = 0;
-    private Queue<string> dialogueQueue; 
+    private int count;
+    private QueueLinked<string> dialogueQueue; 
 
     void Start()
     {
-        
-        string text = "";
         TextReader();
         NextButtonPress();
         
@@ -37,25 +36,22 @@ public class TextFileReader : MonoBehaviour
         
         string[] lines = content.Split(new [] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); 
         
-        dialogueQueue = new Queue<string>();
+        dialogueQueue = new QueueLinked<string>();
         
         foreach (string line in lines)
         {
             dialogueQueue.Enqueue(line);
         }
-
-        
         nextButton.onClick.AddListener(NextButtonPress);
-
     }
 
     public void NextButtonPress()
     {
-        count++;
+        
         string line = dialogueQueue.Dequeue();
         dialogueTextBox.text = line;
         Debug.Log(count);
-
+        count++;
         if (count % 2 == 0)
         {
             snailImage.GetComponent<Animator>().Play("InactiveDialogue");
@@ -66,7 +62,7 @@ public class TextFileReader : MonoBehaviour
         }
         
         
-        if (dialogueQueue.Count <= 0)
+        if (dialogueQueue.Size <= 0)
         {
            SceneManager.LoadScene("Checkpoint Race");
            
