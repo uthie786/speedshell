@@ -35,7 +35,7 @@ public class TextFileReader : MonoBehaviour
         
         var content = dialogueText.text;
         
-        string[] lines = content.Split(new [] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); //change
+        string[] lines = content.Split(new [] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries); 
         
         dialogueQueue = new Queue<string>();
         
