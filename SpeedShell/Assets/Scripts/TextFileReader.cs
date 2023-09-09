@@ -21,13 +21,13 @@ public class TextFileReader : MonoBehaviour
     [SerializeField] private GameObject snailImage;
     private int count;
     private QueueLinked<string> dialogueQueue; 
-
+    int isSpeaking = 1;
     void Start()
     {
         TextReader();
         NextButtonPress();
-        
     }
+    
 
     public void TextReader()
     {
@@ -41,37 +41,48 @@ public class TextFileReader : MonoBehaviour
         foreach (string line in lines)
         {
             dialogueQueue.Enqueue(line);
+           // Debug.Log(line);
         }
         nextButton.onClick.AddListener(NextButtonPress);
     }
 
     public void NextButtonPress()
     {
-        
-        string line = dialogueQueue.Dequeue();
-        dialogueTextBox.text = line;
-        Debug.Log(count);
-        count++;
-        if (count % 2 == 0)
+        isSpeaking *= -1;
+        var line = dialogueQueue.Dequeue();
+        if (count == 0)
         {
+            line = dialogueQueue.Dequeue();
+        }
+        Debug.Log(line);
+        dialogueTextBox.text = line;
+        count++;
+       
+        if (isSpeaking == 1)
+        {
+            
             snailImage.GetComponent<Animator>().Play("InactiveDialogue");
+            
         }
         else
         {
+            
             snailImage.GetComponent<Animator>().Play("ActiveDialogue");
         }
         
         
         if (dialogueQueue.Size <= 0)
         {
-           SceneManager.LoadScene("Checkpoint Race");
-           
+            SceneManager.LoadScene("Checkpoint Race");
         }
     }
 
+   
     
 
-    
+
+
+
 }
 
 

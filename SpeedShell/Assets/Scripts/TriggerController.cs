@@ -18,11 +18,14 @@ public class TriggerController : MonoBehaviour
     [SerializeField] private GameObject[] emptyArray;
     [SerializeField] private GameObject uiDefeatScreen;
     [SerializeField] private GameObject trigger;
-
+    [SerializeField] private Text endText;
+    [SerializeField] private Text endTime;
+    [SerializeField] private Image colourOverlay;
+    private Color col;
     void Start()
     {
         timer = timerDuration;
-        
+        col = colourOverlay.GetComponent<Image>().color;
         for (int i = emptyArray.Length - 1; i >= 0; i--)
         {
             checkpointList.Push(emptyArray[i]);
@@ -83,10 +86,11 @@ public class TriggerController : MonoBehaviour
 
     public void Defeat()
     {
-        //if (timer == 0)
-        //{
-          // uiDefeatScreen.
-       // }
+        Time.timeScale = 0f;
+        col = Color.red;
+        endText.text = "YOU LOSE";
+        endTime.text = "0.0";
+        uiDefeatScreen.SetActive(true);
     }
 
 
