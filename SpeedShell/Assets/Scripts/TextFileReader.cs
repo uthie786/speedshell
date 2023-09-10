@@ -54,7 +54,7 @@ public class TextFileReader : MonoBehaviour
         {
             line = dialogueQueue.Dequeue();
         }
-        Debug.Log(line);
+        Debug.Log("ButtonClicked");
         dialogueTextBox.text = line;
         count++;
        

@@ -1,7 +1,9 @@
-"You're totally rad on the track brah. I think its time to test your limits."
+"Feeling a bit more comfortable? Lets get you in a real race."
 
-"Okay lets go"
+"Lets do it"
 
-"Be careful brah this track is gnarly and there is hardly any room for mistakes. Racers ready?"
+"This is a super chill circuit, all you need to do is beat the other bros to the finish line."
 
-"Readyyyyy!!"
+"This is going to be a breeze!"
+
+RACE START

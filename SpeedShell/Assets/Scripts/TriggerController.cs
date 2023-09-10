@@ -41,7 +41,10 @@ public class TriggerController : MonoBehaviour
             Defeat();
         }
         DisplayTimer();
-
+        if (checkpointList.IsEmpty)
+        {
+            Victory();
+        }
     }
 
     private void Awake()
@@ -58,11 +61,15 @@ public class TriggerController : MonoBehaviour
             if(checkpointList.Peek() == attachedEmpty)
             {
                 count++;
-                Debug.Log(count);
                 checkpointList.Pop();
                 trigger.transform.SetParent(emptyArray[count].transform);
                 trigger.transform.position = emptyArray[count].transform.position;
-            } 
+                
+                
+            }
+            Debug.Log(count);
+            Debug.Log(emptyArray.Length);
+            
 
         } 
 
@@ -74,8 +81,8 @@ public class TriggerController : MonoBehaviour
         }
         timer += 5;
         DisplayTimer();
-        Debug.Log("+5s");
-        Debug.Log(timer);
+        //Debug.Log("+5s");
+       // Debug.Log(timer);
         
     }
 
@@ -89,7 +96,15 @@ public class TriggerController : MonoBehaviour
         Time.timeScale = 0f;
         col = Color.red;
         endText.text = "YOU LOSE";
-        endTime.text = "0.0";
+        endTime.text = "0.0 Seconds";
+        uiDefeatScreen.SetActive(true);
+    }
+    public void Victory()
+    {
+        Time.timeScale = 0f;
+        col = Color.green;
+        endText.text = "YOU WIN";
+        endTime.text = timer.ToString() + " Seconds";
         uiDefeatScreen.SetActive(true);
     }
 
