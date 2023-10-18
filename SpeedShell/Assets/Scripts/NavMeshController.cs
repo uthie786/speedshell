@@ -20,6 +20,6 @@ public class NavMeshController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       navmeshagent.SetDestination();
+       //navmeshagent.SetDestination();
     }
 }
