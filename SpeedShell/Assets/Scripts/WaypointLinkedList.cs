@@ -11,10 +11,12 @@ public class WaypointLinkedList : MonoBehaviour
     public NavMeshAgent navmeshagent;
     public GameObject waypointPos;
     public LinkedListadt1<GameObject> waypointList = new LinkedListadt1<GameObject>();
-    
+    private int waypointCount;
     [SerializeField] public GameObject[] waypoints;
     void Start()
     {
+        
+        
         count = 1;
         navmeshagent = GetComponent<NavMeshAgent>();
         
@@ -35,7 +37,7 @@ public class WaypointLinkedList : MonoBehaviour
         
         Debug.Log(waypointPos.transform.position);
 
-        navmeshagent.SetDestination(waypointPos.transform.position); //bloodymanu bloody
+        navmeshagent.SetDestination(waypointPos.transform.position); 
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,7 +46,7 @@ public class WaypointLinkedList : MonoBehaviour
         GetNextWayPoint(count);
         Debug.Log(count);
 
-        if (count == 10)
+        if (count == 9)
         {
             count = 0;
             
