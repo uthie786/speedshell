@@ -24,18 +24,18 @@ public class WaypointLinkedList : MonoBehaviour
         {
             waypointList.Insert(point);
         }
-        Debug.Log(waypointList);
+        //Debug.Log(waypointList);
         
         GetNextWayPoint(count);
     }
     
     public void GetNextWayPoint(int waypointCount)
     {
-        Debug.Log(waypointList[waypointCount]);
+        //Debug.Log(waypointList[waypointCount]);
         
         waypointPos = waypointList[waypointCount];
         
-        Debug.Log(waypointPos.transform.position);
+        //Debug.Log(waypointPos.transform.position);
 
         navmeshagent.SetDestination(waypointPos.transform.position); 
     }
@@ -44,7 +44,7 @@ public class WaypointLinkedList : MonoBehaviour
     {
         count++;
         GetNextWayPoint(count);
-        Debug.Log(count);
+        //Debug.Log(count);
 
         if (count == 9)
         {
