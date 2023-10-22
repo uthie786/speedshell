@@ -23,9 +23,9 @@ public class WaypointLinkedList : MonoBehaviour
         foreach(GameObject point in waypoints)
         {
             waypointList.Insert(point);
+            Debug.Log(point);
         }
-        //Debug.Log(waypointList);
-        
+
         GetNextWayPoint(count);
     }
     

@@ -11,8 +11,7 @@ public class AnimatorController : MonoBehaviour
     private static readonly int Silly = Animator.StringToHash("silly");
     
     private static readonly int CycleOffset = Animator.StringToHash("offset");
-    private static readonly int Mirror = Animator.StringToHash("offset");
-    // Start is called before the first frame update
+    private static readonly int Mirror = Animator.StringToHash("mirror");
     private void Awake()
     {
         controller = GetComponent<Animator>();
@@ -40,19 +39,7 @@ public class AnimatorController : MonoBehaviour
 
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Happy));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Hiphop));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Silly));
-        }
+        StartCoroutine(WaitRandomTime());
     }
 
 
