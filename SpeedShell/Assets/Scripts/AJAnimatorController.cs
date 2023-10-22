@@ -11,14 +11,13 @@ public class AJAnimatorController : MonoBehaviour
     private static readonly int Defeat = Animator.StringToHash("defeat");
     
     private static readonly int CycleOffset = Animator.StringToHash("offset");
-    private static readonly int Mirror = Animator.StringToHash("offset");
-    // Start is called before the first frame update
+    private static readonly int Mirror = Animator.StringToHash("mirror");
+    
     private void Awake()
     {
         controller = GetComponent<Animator>();
         controller.speed = Random.Range(0.95f, 1.05f);
-        //controller.
-        
+
         controller.SetFloat(CycleOffset, Random.Range(0f,1f));
         controller.SetBool(Mirror, Random.Range(0f,1f) > 0.5f);
 
@@ -29,34 +28,16 @@ public class AJAnimatorController : MonoBehaviour
     {
         int[] trigger = { Victory, Defeat, Rallying };
         StartCoroutine(TriggerAnimationCouroutine(trigger[Random.Range(0, trigger.Length)]));
+        StartCoroutine(WaitRandomTime());
     }
 
     IEnumerator WaitRandomTime()
     {
         yield return new WaitForSeconds(Random.Range(3f, 10f));
         RandomiseAnimation();
-    }
-
-
-    void Update()
-    {
         
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Victory));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Rallying));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            StartCoroutine(TriggerAnimationCouroutine(Defeat));
-        }
     }
-
-
-
+    
     IEnumerator TriggerAnimationCouroutine(int id)
     {
         controller.SetTrigger(id);

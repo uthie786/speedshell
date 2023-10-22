@@ -28,6 +28,7 @@ public class AnimatorController : MonoBehaviour
     {
         int[] trigger = { Happy, Hiphop, Silly };
         StartCoroutine(TriggerAnimationCouroutine(trigger[Random.Range(0, trigger.Length)]));
+        StartCoroutine(WaitRandomTime());
     }
 
     IEnumerator WaitRandomTime()
@@ -35,15 +36,7 @@ public class AnimatorController : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(3f, 10f));
         RandomiseAnimation();
     }
-
-
-    void Update()
-    {
-        StartCoroutine(WaitRandomTime());
-    }
-
-
-
+    
     IEnumerator TriggerAnimationCouroutine(int id)
     {
         controller.SetTrigger(id);

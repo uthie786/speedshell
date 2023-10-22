@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -47,30 +48,39 @@ public class CharacterPositionChecker : MonoBehaviour
         Debug.Log(Snails.Length);
         for(int x = 1; x < Snails.Length; x++)
         {
-            if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed < Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
+            for (int j = 0; j < x; j++)
             {
+                if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed < Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
+                {
                     GameObject temp = Snails[x - 1];
                     Snails[x - 1] = Snails[x];
                     Snails[x] = temp;
                 }
 
-            //if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed ==
-                //Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
-            //{
-                
-           // }
+                /*if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed ==
+                    Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
+                {
+                    if (Snails[x - 1].GetComponent<NavMeshAgent>().remainingDistance >
+                        Snails[x].GetComponent<NavMeshAgent>().remainingDistance)
+                    {
+                        GameObject temp = Snails[x - 1];
+                        Snails[x - 1] = Snails[x];
+                        Snails[x] = temp;
+                    }
+                }*/
 
+                
+                //This is for the UI
                 if (Snails[x - 1] == gameObject)
                 {
                     index = x -1 ;
                 }
-            
                 if (Snails[x] == gameObject)
                 {
                     index = x;
                 }
-            
-
+            }
+//Vector3.Distance(Snails[x-1],Snails[x-1].GetComponent<NavMeshAgent>().destination
         }
         posUI.text = "Position: " + index + "/6";
 
