@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Checkpoint Race.unity
     guid: 7fb0ab70855258243bb472e8777abc20
+  - enabled: 1
+    path: Assets/Scenes/Beginner Race.unity
+    guid: f45ab261387646346bb34e0c69fe61db
   m_configObjects: {}

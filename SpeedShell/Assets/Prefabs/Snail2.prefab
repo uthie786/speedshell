@@ -454,7 +454,6 @@ MonoBehaviour:
   navmeshagent: {fileID: 0}
   waypointPos: {fileID: 0}
   waypoints:
-  - {fileID: 1800422465571065507, guid: f2b2fa6f144e3e44e9d0e4a321cccdf3, type: 3}
   - {fileID: 5840720282568074666, guid: a58757f473a789749a1d2f1dd32d5616, type: 3}
   - {fileID: 1846354112324431388, guid: 9ded23bd08db7a447a9c6ddeaa71d7df, type: 3}
   - {fileID: 6278207041449036912, guid: f7fd1f547c1e3a741a0c24f432d41eac, type: 3}
@@ -476,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e955127e184a041936e3c2920a4eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypointPassed: 0
 --- !u!1 &5947383762695831361
 GameObject:
   m_ObjectHideFlags: 0

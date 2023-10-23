@@ -12,7 +12,7 @@ public class AIRacerFactory : MonoBehaviour
     {
         if (num == 1)
         {
-            Instantiate(aiSnail1);
+            Instantiate(aiSnail1).GetComponent<AISnail>();
             Debug.Log("Instantiated");
         }
         if (num == 2)

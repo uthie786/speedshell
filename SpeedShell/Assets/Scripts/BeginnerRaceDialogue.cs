@@ -1,19 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
-using System;
-using System.Net.Mime;
 using StacksAndQueues;
-using TMPro;
-using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
-using Button = UnityEngine.UI.Button;
-using Image = UnityEngine.UIElements.Image;
 
-public class TextFileReader : MonoBehaviour
+public class BeginnerRaceDialogue : MonoBehaviour
 {
     [SerializeField] private TextAsset dialogueText;
     [SerializeField] private Button nextButton;
@@ -41,7 +34,7 @@ public class TextFileReader : MonoBehaviour
         foreach (string line in lines)
         {
             dialogueQueue.Enqueue(line);
-           // Debug.Log(line);
+            // Debug.Log(line);
         }
         nextButton.onClick.AddListener(NextButtonPress);
     }
@@ -73,9 +66,8 @@ public class TextFileReader : MonoBehaviour
         
         if (dialogueQueue.Size <= 0)
         {
-            SceneManager.LoadScene("Checkpoint Race");
+            SceneManager.LoadScene("Beginner Race");
         }
     }
 }
-
 
