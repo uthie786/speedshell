@@ -15,15 +15,16 @@ public class LapCount : MonoBehaviour
 
     void Update()
     {
-        if (lapCounter > 9)
+        if (lapCounter >= 11 && lapCounter < 21)
         {
             lapCount.text = "LAP: 2/3";
         }
-        if (lapCounter > 18)
+
+        if (lapCounter >= 21 && lapCounter < 31)
         {
             lapCount.text = "LAP: 3/3";
         }
-        if (lapCounter > 27)
+        if (lapCounter >= 31)
         {
             Time.timeScale = 0;
         }

@@ -73,11 +73,11 @@ public class CharacterPositionChecker : MonoBehaviour
                 //This is for the UI
                 if (Snails[x - 1] == gameObject)
                 {
-                    index = x -1 ;
+                    index = x ;
                 }
                 if (Snails[x] == gameObject)
                 {
-                    index = x;
+                    index = x+1;
                 }
             }
 //Vector3.Distance(Snails[x-1],Snails[x-1].GetComponent<NavMeshAgent>().destination
