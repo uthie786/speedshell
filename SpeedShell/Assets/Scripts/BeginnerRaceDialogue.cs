@@ -53,13 +53,10 @@ public class BeginnerRaceDialogue : MonoBehaviour
        
         if (isSpeaking == 1)
         {
-            
             snailImage.GetComponent<Animator>().Play("InactiveDialogue");
-            
         }
         else
         {
-            
             snailImage.GetComponent<Animator>().Play("ActiveDialogue");
         }
         

@@ -25,10 +25,5 @@ public class AIRacerFactory : MonoBehaviour
             Instantiate(aiSnail3).GetComponent<AISnail>();
             Debug.Log("Instantiated");
         }
-        
-        //return null;
-        
-        
-        
     }
 }

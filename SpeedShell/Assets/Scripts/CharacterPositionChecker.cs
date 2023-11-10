@@ -38,7 +38,7 @@ public class CharacterPositionChecker : MonoBehaviour
         while (gameRunning)
         {
             PositionChecker();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.1f);
             Debug.Log("PositionChecked");
         }
     }
@@ -50,12 +50,19 @@ public class CharacterPositionChecker : MonoBehaviour
         {
             for (int j = 0; j < x; j++)
             {
-                if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed < Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
-                {
-                    GameObject temp = Snails[x - 1];
-                    Snails[x - 1] = Snails[x];
-                    Snails[x] = temp;
-                }
+                
+                    if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed ==
+                        Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
+                    {
+                        if (Snails[x - 1].GetComponent<NavMeshAgent>().remainingDistance >
+                            Snails[x].GetComponent<NavMeshAgent>().remainingDistance)
+                        {
+                            GameObject temp = Snails[x - 1];
+                            Snails[x - 1] = Snails[x];
+                            Snails[x] = temp;
+                        }
+                    }
+                
 
                 /*if (Snails[x - 1].GetComponent<PoisitionChecker>().waypointPassed ==
                     Snails[x].GetComponent<PoisitionChecker>().waypointPassed)
