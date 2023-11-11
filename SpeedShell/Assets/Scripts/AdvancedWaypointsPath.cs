@@ -1,18 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class AdvancedWaypointsPath : MonoBehaviour
 {
 
     private Graph<GameObject> advancedWaypointList = new Graph<GameObject>();
-    [SerializeField] private GameObject[] waypoints;
+    [SerializeField] private GameObject[] waypoints; 
+    private NavMeshAgent navmesh;
+    private int count;
     //public NavMeshAgent navmeshagent;
     public GameObject waypointPos;
     
     
     private void Awake()
     {
+        navmesh = gameObject.GetComponent<NavMeshAgent>();
         foreach(GameObject point in waypoints)
         {
             advancedWaypointList.AddVertex(point);
@@ -36,9 +43,31 @@ public class AdvancedWaypointsPath : MonoBehaviour
         Debug.Log(advancedWaypointList.GetConnectedVertices(waypoints[0]));
     }
 
+    private void Start()
+    {
+        count = 1;
+        navmesh.SetDestination(waypoints[0].transform.position);
+    }
+
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(count);
+        List<GameObject> tempWay;
+        tempWay = advancedWaypointList.GetConnectedVertices(other.gameObject);
+        int rand = Random.Range(0, tempWay.Count);
+        SetNextWaypoint(tempWay.ElementAt(rand));
+        
+        
+    }
+
+    void SetNextWaypoint(GameObject nextWaypoint)
+    {
+        navmesh.SetDestination(nextWaypoint.transform.position);
     }
 }
