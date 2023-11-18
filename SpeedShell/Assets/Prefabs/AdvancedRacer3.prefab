@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 4402070506671055882}
   - component: {fileID: 309291567899504479}
   - component: {fileID: 8636299556534189384}
-  - component: {fileID: 6094678402285366652}
+  - component: {fileID: 5444874887676779126}
   m_Layer: 0
   m_Name: AdvancedRacer3
   m_TagString: Snail
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypointPassed: 0
---- !u!114 &6094678402285366652
+--- !u!114 &5444874887676779126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,21 +378,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3591095259185486174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cade799e4554044ca31b84a2f3737b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c384fd9462dec54e97f436d956d099e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 3827438090924396756, guid: fcb55fbbb33f77541b68cdb606fe6627, type: 3}
-  - {fileID: 191332642023320880, guid: 1effe48d1dd8a1b44bc8d459dec0df79, type: 3}
-  - {fileID: 3321626103517340758, guid: a2d171653b34ece418c708f49ee3f1ea, type: 3}
-  - {fileID: 5408782503469022028, guid: 14c85280f9b304e408610f122370b524, type: 3}
-  - {fileID: 2033767587421053637, guid: 1ca9b00dbbc95eb42a5464ceb1ec274e, type: 3}
-  - {fileID: 6039843275220664957, guid: 2061848cc898e6c4daf035d39ccc79d8, type: 3}
-  - {fileID: 4623639511361364570, guid: da0ce1c2821e01c48964c2d39c97eebf, type: 3}
-  - {fileID: 9189921525068575359, guid: cca4cd5eddc76bb4faa7bbacf3605f09, type: 3}
-  - {fileID: 6100521911067197376, guid: a4c6a19777f679349aadaa3e7dadfbb6, type: 3}
-  - {fileID: 6600847702764672891, guid: 1c9eb3c6ea8fe7b43be9da4fcd2cc5d8, type: 3}
-  waypointPos: {fileID: 0}
 --- !u!1 &5019372129420034841
 GameObject:
   m_ObjectHideFlags: 0
