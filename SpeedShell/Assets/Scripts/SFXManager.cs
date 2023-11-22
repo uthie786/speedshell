@@ -23,8 +23,8 @@ public class SFXManager : MonoBehaviour
             
             sounds.Add("bounce",audioClips[0]);
             sounds.Add("Finish",audioClips[1]);
-            sounds.Add("Lap",audioClips[2]);
-            sounds.Add("Move",audioClips[3]);
+            sounds.Add("Click",audioClips[2]);
+            sounds.Add("Lose",audioClips[3]);
             sounds.Add("Cheer",audioClips[4]);
         }
 

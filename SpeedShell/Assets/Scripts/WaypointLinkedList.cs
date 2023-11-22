@@ -57,8 +57,6 @@ public class WaypointLinkedList : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        
         GetNextWayPoint(count);
     }
 }

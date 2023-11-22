@@ -19,20 +19,24 @@ public class MainMenuController : MonoBehaviour
     
     public void LoadLevelSelection()
     {
+        SFXManager.instance.PlaySound("Click");
         SceneManager.LoadScene("Level Selection");
     }
 
     public void LoadCheckpointRace()
     {
+        SFXManager.instance.PlaySound("Click");
         SceneManager.LoadScene("Checkpoint Race Dialogue");
     }
 
     public void LoadBeginnerRace()
     {
+        SFXManager.instance.PlaySound("Click");
         SceneManager.LoadScene("Beginner Race Dialogue");
     }
     public void LoadAdvancedRace()
     {
+        SFXManager.instance.PlaySound("Click");
         SceneManager.LoadScene("Advanced Race Dialogue");
     }
     public void Quit()

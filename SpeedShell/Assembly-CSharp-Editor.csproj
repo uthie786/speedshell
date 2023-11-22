@@ -743,11 +743,11 @@
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TerrainTools">
      <HintPath>C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
