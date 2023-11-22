@@ -8,15 +8,20 @@ public class SFXManager : MonoBehaviour
     public static SFXManager instance;
     [SerializeField] private AudioClip[] audioClips;
     private HashMap<string, AudioClip> sounds = new HashMap<string, AudioClip>();
-        public SFXManager()
+    public AudioSource auSource;
+
+    public float[] volumes;
+   
+    private void Awake()
         {
+            if (instance != null && instance != this)
+            {
+                Destroy(this);
+            }
+
+            instance = this;
             
-            
-        }
-        
-        private void Awake()
-        {
-            sounds.Add("Start",audioClips[0]);
+            sounds.Add("bounce",audioClips[0]);
             sounds.Add("Finish",audioClips[1]);
             sounds.Add("Lap",audioClips[2]);
             sounds.Add("Move",audioClips[3]);
@@ -25,22 +30,10 @@ public class SFXManager : MonoBehaviour
 
         public void PlaySound(string soundName)
         {
-            AudioSource.PlayClipAtPoint(sounds.Get(soundName),gameObject.transform.position);
+            auSource.PlayOneShot(sounds[soundName],volumes[Array.IndexOf(audioClips,sounds[soundName])]);
             Debug.Log("Audio");
         }
-
-        public static SFXManager Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new SFXManager();
-                }
-
-                return instance;
-            }
-        }
+        
 }
 
 

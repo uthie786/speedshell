@@ -7,14 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float speed = 7f;
     [SerializeField] public float Rotatespeed = 50f;
-
-
-    public static SFXManager sfxManager;
     
-    void Start()
-    {
-        //sfxManager.PlaySound("Start");
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,7 +22,6 @@ public class PlayerController : MonoBehaviour
         if (verticalInput != 0)
         {
             transform.Rotate(rotation * Rotatespeed * Time.deltaTime);
-            sfxManager.PlaySound("Start");
         }
         
        

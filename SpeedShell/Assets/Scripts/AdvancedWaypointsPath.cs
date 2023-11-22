@@ -59,15 +59,14 @@ public class AdvancedWaypointsPath : MonoBehaviour
 
         Debug.Log(advancedWaypointList.GetConnectedVertices(waypoints[0]));
     }
-}
 
-/*private void Start()
-{
-    count = 1;
-    navmesh.SetDestination(waypoints[0].transform.position);
-}
 
-// Update is called once per frame
+    private void Start()
+    {
+        SFXManager.instance.PlaySound("bounce");
+    }
+}
+/* Update is called once per frame
 void Update()
 {
     
