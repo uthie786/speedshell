@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Beginner Race.unity
     guid: f45ab261387646346bb34e0c69fe61db
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 68564edf34942424b9f98632b7303e40
+  - enabled: 1
+    path: Assets/Scenes/Level Selection.unity
+    guid: 6c5f8beb3957d834dbac165290980856
   m_configObjects: {}
