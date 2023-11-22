@@ -1602,6 +1602,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sNAILS
       objectReference: {fileID: 0}
+    - target: {fileID: 4642077832759838832, guid: 7afc01eeb5f595742baca7847b1ce774,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snail
+      objectReference: {fileID: 0}
     - target: {fileID: 4642077832759838838, guid: 7afc01eeb5f595742baca7847b1ce774,
         type: 3}
       propertyPath: m_RootOrder

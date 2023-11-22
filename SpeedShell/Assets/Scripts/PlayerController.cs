@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Searcher;
@@ -9,11 +10,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float Rotatespeed = 50f;
 
 
-    public static SFXManager sfxManager;
+    public  SFXManager sfxManager;
     
     void Start()
     {
-        //sfxManager.PlaySound("Start");
+        sfxManager.PlaySound("Thud");
     }
 
     // Update is called once per frame
@@ -29,10 +30,13 @@ public class PlayerController : MonoBehaviour
         if (verticalInput != 0)
         {
             transform.Rotate(rotation * Rotatespeed * Time.deltaTime);
-            sfxManager.PlaySound("Start");
+           // sfxManager.PlaySound("Start");
         }
         
-       
-        
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        sfxManager.PlaySound("Thud");
     }
 }

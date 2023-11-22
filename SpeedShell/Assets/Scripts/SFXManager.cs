@@ -11,12 +11,12 @@ public class SFXManager : MonoBehaviour
         public SFXManager()
         {
             
-            
+
         }
         
         private void Awake()
         {
-            sounds.Add("Start",audioClips[0]);
+            sounds.Add("Thud",audioClips[0]);
             sounds.Add("Finish",audioClips[1]);
             sounds.Add("Lap",audioClips[2]);
             sounds.Add("Move",audioClips[3]);
@@ -26,7 +26,7 @@ public class SFXManager : MonoBehaviour
         public void PlaySound(string soundName)
         {
             AudioSource.PlayClipAtPoint(sounds.Get(soundName),gameObject.transform.position);
-            Debug.Log("Audio");
+            //Debug.Log("Audio");
         }
 
         public static SFXManager Instance

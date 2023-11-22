@@ -10,7 +10,7 @@ public class LapCount : MonoBehaviour
     public int lapCounter = 0;
     void Start()
     {
-        
+        lapCounter = 0;
     }
 
     void Update()

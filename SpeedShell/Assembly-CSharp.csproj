@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GraphADT.cs" />
      <Compile Include="Assets\Scripts\WaypointLinkedList.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\AdvancedSnailController.cs" />
      <Compile Include="Assets\Scripts\SFXManager.cs" />
      <Compile Include="Assets\Scripts\LinkedListADT1.cs" />
      <Compile Include="Assets\Scripts\BeginnerRaceDialogue.cs" />
@@ -63,7 +64,8 @@
      <Compile Include="Assets\Scripts\PoisitionChecker.cs" />
      <Compile Include="Assets\Scripts\TriggerController.cs" />
      <Compile Include="Assets\Scripts\HashMapADT.cs" />
-     <Compile Include="Assets\Scripts\AdvancedSnailController.cs" />
+     <Compile Include="Assets\Scripts\ButtonManager.cs" />
+     <Compile Include="Assets\Scripts\LapCountAdvanced.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

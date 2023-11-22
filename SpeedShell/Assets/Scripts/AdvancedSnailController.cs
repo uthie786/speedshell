@@ -24,7 +24,7 @@ public class AdvancedSnailController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(num);
+        //Debug.Log(num);
         List<GameObject> tempWay;
         tempWay = AdvancedWaypointsPath.Instance.advancedWaypointList.GetConnectedVertices(other.gameObject);
         int rand = Random.Range(0, tempWay.Count);

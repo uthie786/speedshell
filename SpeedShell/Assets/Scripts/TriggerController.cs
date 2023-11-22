@@ -55,7 +55,7 @@ public class TriggerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Snail"))
         {
             GameObject attachedEmpty = trigger.transform.parent.gameObject;
             if(checkpointList.Peek() == attachedEmpty)
