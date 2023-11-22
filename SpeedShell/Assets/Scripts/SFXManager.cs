@@ -17,16 +17,16 @@ public class SFXManager : MonoBehaviour
         private void Awake()
         {
             sounds.Add("Thud",audioClips[0]);
-            sounds.Add("Finish",audioClips[1]);
-            sounds.Add("Lap",audioClips[2]);
-            sounds.Add("Move",audioClips[3]);
-            sounds.Add("Cheer",audioClips[4]);
+            sounds.Add("button",audioClips[1]);
+            sounds.Add("win",audioClips[2]);
+            sounds.Add("fail",audioClips[3]);
+            sounds.Add("checkpoint",audioClips[4]);
         }
 
         public void PlaySound(string soundName)
         {
             AudioSource.PlayClipAtPoint(sounds.Get(soundName),gameObject.transform.position);
-            //Debug.Log("Audio");
+            Debug.Log("yes");
         }
 
         public static SFXManager Instance

@@ -12,7 +12,7 @@ public class TriggerController : MonoBehaviour
     private int count = 0;
     private float timer = 0f;
     private StackController<GameObject> checkpointList;
-    
+    [SerializeField] private SFXManager sfx;
     [SerializeField] private float timerDuration = 15f;
     [SerializeField] private Text timerText;
     [SerializeField] private GameObject[] emptyArray;
@@ -55,6 +55,7 @@ public class TriggerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        sfx.PlaySound("checkpoint");
         if (other.CompareTag("Snail"))
         {
             GameObject attachedEmpty = trigger.transform.parent.gameObject;

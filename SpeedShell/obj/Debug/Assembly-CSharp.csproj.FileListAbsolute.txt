@@ -1,0 +1,2 @@
+E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
