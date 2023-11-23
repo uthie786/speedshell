@@ -22,10 +22,10 @@ public class SFXManager : MonoBehaviour
             instance = this;
             
             sounds.Add("bounce",audioClips[0]);
-            sounds.Add("Finish",audioClips[1]);
+            sounds.Add("cheer",audioClips[1]);
             sounds.Add("Click",audioClips[2]);
-            sounds.Add("Lose",audioClips[3]);
-            sounds.Add("Cheer",audioClips[4]);
+            sounds.Add("LapSound",audioClips[3]);
+            sounds.Add("Bump",audioClips[4]);
         }
 
         public void PlaySound(string soundName)

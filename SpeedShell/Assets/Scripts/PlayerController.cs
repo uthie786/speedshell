@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Searcher;
@@ -7,7 +8,12 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float speed = 7f;
     [SerializeField] public float Rotatespeed = 50f;
-    
+
+
+    private void Start()
+    {
+        BackgroundMusic.instance.PlaySound("BackgroundMusic");
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,5 +32,10 @@ public class PlayerController : MonoBehaviour
         
        
         
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        SFXManager.instance.PlaySound("Bump");
     }
 }

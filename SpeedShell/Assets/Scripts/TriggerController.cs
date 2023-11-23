@@ -57,6 +57,7 @@ public class TriggerController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SFXManager.instance.PlaySound("LapSound");
             GameObject attachedEmpty = trigger.transform.parent.gameObject;
             if(checkpointList.Peek() == attachedEmpty)
             {
@@ -101,6 +102,8 @@ public class TriggerController : MonoBehaviour
     }
     public void Victory()
     {
+        SFXManager.instance.PlaySound("cheer");
+        
         Time.timeScale = 0f;
         col = Color.green;
         endText.text = "YOU WIN";

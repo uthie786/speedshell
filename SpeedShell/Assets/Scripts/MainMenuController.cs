@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,28 +17,42 @@ public class MainMenuController : MonoBehaviour
     {
 
     }
+
+    private IEnumerator TimeWait(string name)
+    {
+        float t = 0;
+        while(t < 1)
+        {
+            t += Time.deltaTime;
+
+            yield return null;
+        }
+
+        SceneManager.LoadScene(name);
+    }
     
     public void LoadLevelSelection()
     {
-        SceneManager.LoadScene("Level Selection");
         SFXManager.instance.PlaySound("Click");
+        StartCoroutine(TimeWait("Level Selection"));
+        
     }
 
     public void LoadCheckpointRace()
     {
+        StartCoroutine(TimeWait("Checkpoint Race Dialogue"));
         SFXManager.instance.PlaySound("Click");
-        SceneManager.LoadScene("Checkpoint Race Dialogue");
     }
 
     public void LoadBeginnerRace()
     {
         SFXManager.instance.PlaySound("Click");
-        SceneManager.LoadScene("Beginner Race Dialogue");
+        StartCoroutine(TimeWait("Beginner Race Dialogue"));
     }
     public void LoadAdvancedRace()
     {
         SFXManager.instance.PlaySound("Click");
-        SceneManager.LoadScene("Advanced Race Dialogue");
+        StartCoroutine(TimeWait("Advanced Race Dialogue"));
     }
     public void Quit()
     {
