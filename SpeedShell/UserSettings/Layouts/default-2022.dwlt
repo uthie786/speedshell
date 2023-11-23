@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 85
+  controlID: 96
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 305
     height: 705
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 653
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -451,10 +451,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8ce4fdff22ebfdff7825feff642bfeff082dfeff262efeff802ffeff3a3ffeff6e4dfeffb44efeff6462feff7a62feff3268feffc6ef000000f00000
+      scrollPos: {x: 0, y: 3801}
+      m_SelectedIDs: b476faff
+      m_LastClickedID: -362828
+      m_ExpandedIDs: 12a0fdff582afeff142cfeffc02ffeff0e43feff204afeffee65feff1c68feff56eb000034ef0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -835,9 +835,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 485.65234, y: 358.34875, z: 0}
+    m_Target: {x: 34.919155, y: -31.000942, z: -13.499825}
     speed: 2
-    m_Value: {x: 485.65234, y: 358.34875, z: 0}
+    m_Value: {x: 34.919155, y: -31.000942, z: -13.499825}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -883,13 +883,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.6676678, y: -0.02009212, z: 0.018031368, w: 0.7439702}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 0.99999994}
+    m_Value: {x: 0.6676398, y: -0.021208046, z: 0.019032842, w: 0.743939}
   m_Size:
-    m_Target: 463.08063
+    m_Target: 157.77568
     speed: 2
-    m_Value: 463.08063
+    m_Value: 157.77568
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1075,30 +1075,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lukea\Documents\GitHub\speedshell\SpeedShell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 203}
-    m_SelectedIDs: fe060000
-    m_LastClickedID: 1790
-    m_ExpandedIDs: 000000000206000000ca9a3b
+    scrollPos: {x: 0, y: 127}
+    m_SelectedIDs: 32060000
+    m_LastClickedID: 1586
+    m_ExpandedIDs: 00000000020600003206000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scripts
+      m_OriginalName: Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 1626
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 

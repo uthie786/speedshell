@@ -21,20 +21,7 @@ public class LapCount : MonoBehaviour
         }
 
         lapCount.text = lapCounter + " /3 Laps";
-        /* if (lapCounter >= 11 && lapCounter < 21)
-         {
-             lapCount.text = "LAP: 2/3";
-         }
- 
-         if (lapCounter >= 21 && lapCounter < 31)
-         {
-             lapCount.text = "LAP: 3/3";
-         }
-         if (lapCounter >= 31)
-         {
-             Time.timeScale = 0;
-         }*/
-
+        
     }
 
     private void OnTriggerEnter(Collider other)

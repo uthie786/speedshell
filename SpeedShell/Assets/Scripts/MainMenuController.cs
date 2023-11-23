@@ -19,8 +19,8 @@ public class MainMenuController : MonoBehaviour
     
     public void LoadLevelSelection()
     {
-        SFXManager.instance.PlaySound("Click");
         SceneManager.LoadScene("Level Selection");
+        SFXManager.instance.PlaySound("Click");
     }
 
     public void LoadCheckpointRace()
