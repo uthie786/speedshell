@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5d580fe4-c3cf-83de-bc04-fbc068296347}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoonShader", "OtoonShader.csproj", "{de263af5-bd40-e95e-47a7-47faa74f6640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoonEditor", "OtoonEditor.csproj", "{a7f6bf0f-a68e-f1f3-7def-1375df4e9258}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{72717143-3807-b725-7346-c79aba06f77c}"
 EndProject
 Global
@@ -12,6 +16,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5d580fe4-c3cf-83de-bc04-fbc068296347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5d580fe4-c3cf-83de-bc04-fbc068296347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{de263af5-bd40-e95e-47a7-47faa74f6640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{de263af5-bd40-e95e-47a7-47faa74f6640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a7f6bf0f-a68e-f1f3-7def-1375df4e9258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a7f6bf0f-a68e-f1f3-7def-1375df4e9258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72717143-3807-b725-7346-c79aba06f77c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72717143-3807-b725-7346-c79aba06f77c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

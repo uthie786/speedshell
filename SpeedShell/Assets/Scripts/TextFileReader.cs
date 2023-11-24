@@ -58,7 +58,7 @@ public class TextFileReader : MonoBehaviour
         dialogueTextBox.text = line;
         count++;
        
-        if (isSpeaking == 1)
+       /* if (isSpeaking == 1)
         {
             
             snailImage.GetComponent<Animator>().Play("InactiveDialogue");
@@ -68,7 +68,7 @@ public class TextFileReader : MonoBehaviour
         {
             
             snailImage.GetComponent<Animator>().Play("ActiveDialogue");
-        }
+        }*/
         
         
         if (dialogueQueue.Size <= 0)

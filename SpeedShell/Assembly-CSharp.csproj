@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2021_3_22;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_22;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -44,55 +44,106 @@
      <Compile Include="Assets\Scripts\NavMeshController.cs" />
      <Compile Include="Assets\Scripts\RestartGame.cs" />
      <Compile Include="Assets\Scripts\AIRacerFactory.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\QueueController.cs" />
      <Compile Include="Assets\Scripts\LapCount.cs" />
      <Compile Include="Assets\Scripts\GraphADT.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\SprintBone\SpringBone.cs" />
      <Compile Include="Assets\Scripts\WaypointLinkedList.cs" />
      <Compile Include="Assets\Scripts\LapCountAdvanced.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\AdvancedSnailController.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Scripts\DemoController.cs" />
      <Compile Include="Assets\Scripts\SFXManager.cs" />
+     <Compile Include="Assets\Scripts\RaceCountdown.cs" />
      <Compile Include="Assets\Scripts\LinkedListADT1.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\ShowcaseDemoController.cs" />
      <Compile Include="Assets\Scripts\BeginnerRaceDialogue.cs" />
      <Compile Include="Assets\Scripts\CharacterPositionChecker.cs" />
      <Compile Include="Assets\Scripts\ButtonManager.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\SceneHintController.cs" />
      <Compile Include="Assets\Scripts\AdvancedWaypointsPath.cs" />
      <Compile Include="Assets\Scripts\StackController.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\AISnail.cs" />
      <Compile Include="Assets\Scripts\TextFileReader.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\DitherByCameraDistance.cs" />
      <Compile Include="Assets\Scripts\AnimatorController.cs" />
      <Compile Include="Assets\Scripts\AJAnimatorController.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\PoisitionChecker.cs" />
      <Compile Include="Assets\Scripts\TriggerController.cs" />
      <Compile Include="Assets\Scripts\HashMapADT.cs" />
+     <Compile Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts\PingPongMove.cs" />
+     <Compile Include="Assets\Scripts\AdvancedRaceDialogue.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Robot Kyle" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!" />
+     <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\5 Stylized Character UnityChan\license.txt" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\SprintBone" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model\Art\Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\5 Stylized Character UnityChan\Textures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\WebGLShowcase\Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Materials\Textures\Back" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Art\Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\3 NPRStyles ShaderBall\Textures" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\3D Game Kit - Character Pack\Characters\Ellen" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\6 ShaderGraph RobotKyle\Material" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen\Materials\PBR" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Robot Kyle\Textures" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\3D Game Kit - Character Pack\Characters\Ellen\Textures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Prefabs" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
      <None Include="Assets\TextFiles\Checkpoint.txt" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\3D Game Kit - Character Pack\Characters\Ellen\Models" />
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\2D Assets" />
      <Folder Include="Assets\Prefabs\AdvancedWaypoints" />
+     <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Shaders\GradientSkybox.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Models" />
+     <Folder Include="Assets\Scenes\Checkpoint Race_Profiles" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\TextMesh Pro" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model\Art\Models" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen\Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\3D Game Kit - Character Pack\Characters" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\3 NPRStyles ShaderBall\Materials" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\WebGLShowcase" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Material" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Models" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Materials\Textures" />
      <Folder Include="Assets\Sounds" />
+     <Folder Include="Assets\Materials\ConcreteBlocksPavingSquareStack001" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\1 Tutorials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Assets\Animations\CharacterAnimations" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model\Prefabs" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\1 Tutorials\Texture" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Robot Kyle\Model" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <Folder Include="Assets\Blender Assets" />
@@ -100,25 +151,52 @@
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TutorialInfo\Scripts" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\1 Tutorials\Materials\OtoonShaderGraph" />
      <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\Animations" />
      <Folder Include="Assets\TutorialInfo" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\license.txt" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\1 Tutorials\Prefabs" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Textures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\3D Game Kit - Character Pack" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen\Materials\CrispRamp" />
      <Folder Include="Assets\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\license.txt" />
      <Folder Include="Assets\Fonts" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Art\RampTextures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\3 NPRStyles ShaderBall\Materials\General" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Art\Textures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Robot Kyle\Materials" />
      <None Include="Assets\TextFiles\Advanced.txt" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scripts" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Art" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model\Art\Texture" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\6 ShaderGraph RobotKyle" />
      <Folder Include="Assets\TextFiles" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\5 Stylized Character UnityChan" />
      <Folder Include="Assets\Prefabs\BeginnerWaypoints" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\UnityChanSSU\Animations" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\2 NPRStyles RobotKyle\Scripts" />
      <Folder Include="Assets\Scenes\Beginner Race" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Textures" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\3 NPRStyles ShaderBall" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\unity-chan!\Unity-chan! Model\Art" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\4 Stylized Character Ellen\Materials\Stylized" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Scenes\1 Tutorials\Materials" />
      <Folder Include="Assets\Scenes\Advanced Race" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <Folder Include="Assets\OToon- URP Toon Shading\Demo(Can be delete)\Plugins\Shaders" />
      <None Include="Assets\TextFiles\Beginner.txt" />
      <Reference Include="UnityEngine">
      <HintPath>E:\UnityHub\Unity Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -792,14 +870,11 @@
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <Reference Include="Unity.Postprocessing.Editor">
+     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
@@ -807,8 +882,14 @@
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -821,6 +902,9 @@
      </Reference>
      <Reference Include="Unity.Burst">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Postprocessing.Runtime">
+     <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
      <HintPath>E:\UnityHub\Projects\Byte Basher\speedshell\speedshell\SpeedShell\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
@@ -848,6 +932,14 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="OtoonEditor.csproj">
+      <Project>{a7f6bf0f-a68e-f1f3-7def-1375df4e9258}</Project>
+      <Name>OtoonEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="OtoonShader.csproj">
+      <Project>{de263af5-bd40-e95e-47a7-47faa74f6640}</Project>
+      <Name>OtoonShader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

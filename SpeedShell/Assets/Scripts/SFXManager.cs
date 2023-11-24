@@ -26,7 +26,7 @@ public class SFXManager : MonoBehaviour
         public void PlaySound(string soundName)
         {
             AudioSource.PlayClipAtPoint(sounds.Get(soundName),gameObject.transform.position);
-            Debug.Log("yes");
+           
         }
 
         public static SFXManager Instance

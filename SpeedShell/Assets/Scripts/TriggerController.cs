@@ -94,6 +94,7 @@ public class TriggerController : MonoBehaviour
 
     public void Defeat()
     {
+        sfx.PlaySound("fail");
         Time.timeScale = 0f;
         col = Color.red;
         endText.text = "YOU LOSE";
@@ -101,7 +102,7 @@ public class TriggerController : MonoBehaviour
         uiDefeatScreen.SetActive(true);
     }
     public void Victory()
-    {
+    {   sfx.PlaySound("win");
         Time.timeScale = 0f;
         col = Color.green;
         endText.text = "YOU WIN";

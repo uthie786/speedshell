@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class LapCount : MonoBehaviour
 {
+    [SerializeField] private SFXManager sfx;
     [SerializeField] private GameObject endScreen;
     [SerializeField] private Text endText;
     [SerializeField] private Color win;
@@ -52,13 +53,21 @@ public class LapCount : MonoBehaviour
     }
     public void Defeat()
     {
-        Time.timeScale = 0f;
+        if (Time.timeScale == 1)
+        {
+            sfx.PlaySound("fail");
+        }
         endText.text = "YOU LOSE";
         colourOverlay.color = Color.red;
         endScreen.SetActive(true);
     }
     public void Victory()
     {
+        if (Time.timeScale == 1)
+        {
+            sfx.PlaySound("win");
+        }
+        
         Time.timeScale = 0f;
         endText.text = "YOU WIN";
         colourOverlay.color = win;

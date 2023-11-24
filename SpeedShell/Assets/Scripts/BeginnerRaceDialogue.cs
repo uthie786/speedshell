@@ -51,19 +51,20 @@ public class BeginnerRaceDialogue : MonoBehaviour
         dialogueTextBox.text = line;
         count++;
        
-        if (isSpeaking == 1)
+       /* if (isSpeaking == 1)
         {
             snailImage.GetComponent<Animator>().Play("InactiveDialogue");
         }
         else
         {
             snailImage.GetComponent<Animator>().Play("ActiveDialogue");
-        }
+        }*/
         
         
         if (dialogueQueue.Size <= 0)
         {
             SceneManager.LoadScene("Beginner Race");
+            
         }
     }
 }
