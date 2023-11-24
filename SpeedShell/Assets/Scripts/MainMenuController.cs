@@ -46,13 +46,13 @@ public class MainMenuController : MonoBehaviour
 
     public void LoadBeginnerRace()
     {
-        SFXManager.instance.PlaySound("Click");
         StartCoroutine(TimeWait("Beginner Race Dialogue"));
+        SFXManager.instance.PlaySound("Click");
     }
     public void LoadAdvancedRace()
     {
-        SFXManager.instance.PlaySound("Click");
         StartCoroutine(TimeWait("Advanced Race Dialogue"));
+        SFXManager.instance.PlaySound("Click");
     }
     public void Quit()
     {
